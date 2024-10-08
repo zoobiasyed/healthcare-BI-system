@@ -1,0 +1,74 @@
+    .img-9 {
+        aspect-ratio: 3.03;
+        object-fit: auto;
+        object-position: center;
+        /* width: 156px; */
+        align-self: center;
+        max-width: 120%;
+        /* extra */
+        width: 100px;
+    }
+    .div-20 {
+        color: #000;
+        align-self: center;
+        margin-top: 6px;
+        /* font: 400 22px Sulphur Point, sans-serif; */
+        /* extra */
+        font-size: 15px;
+        font-family:sans-serif;
+        
+
+    }
+    .div-21 {
+        display: flex;
+        margin-top: 27px;
+        width: 100%;
+        /* gap: 20px; */
+        /* extra */
+    }
+    @media (max-width: 991px) {
+        .div-21 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding-right: 20px;
+        }
+    }
+    .div-22 {
+        color: #535353;
+        flex-grow: 1;
+        flex-basis: auto;
+        margin: auto 0;
+        font: 700 40px Roboto, sans-serif;
+        /* font: 500 30px Roboto, sans-serif; */
+    }
+    .div-23 {
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        display: flex;
+        gap: 5px;
+        font-size: 18px;
+        color: #7b7878;
+        font-weight: 400;
+        white-space: nowrap;
+        padding: 16px 18px;
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    @media (max-width: 991px) {
+        .div-23 {
+        white-space: initial;
+        }
+    }
+    .img-10 {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 24px;
+    }
+    .div-24 {
+        font-family: Roboto, sans-serif;
+        flex-grow: 1;
+        flex-basis: auto;
+        margin: auto 0;
+    }

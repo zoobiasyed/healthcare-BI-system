@@ -1,0 +1,58 @@
+.sidebar-New {
+  width: 250px;
+  background-color: #0b1a61;
+  color: #fff;
+  display: flex;
+  flex-direction: column;  /* Ensure the sidebar-New-New items are stacked vertically */
+  align-items: center;
+  padding: 20px 0;  /* Padding top and bottom */
+  box-sizing: border-box;
+  height: 100vh;  /* Ensure sidebar-New takes full height */
+}
+
+.sideLogo{
+  padding: 1px;
+  margin-bottom: 70px;
+  font-size: xx-large;
+}
+.sidebar-New ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;  /* Stack list items vertically */
+}
+
+.sidebar-New ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;  /* Ensures the li elements span the full width */
+  box-sizing: border-box;  /* Ensure padding and border are included in width */
+}
+
+.sidebar-New ul li.active {
+  background-color: #021347;
+}
+
+.sidebar-New ul li:hover {
+  background-color: #021347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-New {
+    width: 60px;
+    padding: 10px 0;
+  }
+
+  .sidebar-New ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo-New {
+    display: none;
+  }
+}

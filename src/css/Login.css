@@ -1,0 +1,298 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Login Page */
+.customLoginPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+header {
+  background-color: #0033cc;
+  padding: 10px 0; /* Adjust padding to reduce header size */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Styles */
+.customNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px; /* Add some padding for spacing */
+}
+
+/* Adjusted Logo Section */
+.customLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns logo text to the left */
+}
+
+.customLogo h1 {
+  color: #ffffff;
+  font-size: 28px; /* Adjusted font size */
+  font-weight: normal;
+  margin: 0;
+}
+
+.customLogo h1 span {
+  color: #ff0000;
+}
+
+.customLogo p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 12px; /* Adjusted font size */
+}
+
+/* Navigation Styles */
+nav {
+  margin-left: auto; /* Pushes the navigation to the right */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.customContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Quote and Login Sections */
+.customQuoteSection,
+.customLoginSection {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .customContent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .customQuoteSection,
+  .customLoginSection {
+    margin-bottom: 0;
+  }
+
+  .customLoginSection {
+    text-align: left;
+    padding-left: 40px;
+    border-left: 2px solid #eee;
+  }
+}
+
+/* Blockquote Styles */
+.customQuoteSection blockquote {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-style: italic;
+  position: relative;
+}
+
+.customQuoteSection blockquote:before,
+.customQuoteSection blockquote:after {
+  content: "“";
+  font-size: 36px;
+  color: #666;
+  position: absolute;
+}
+
+.customQuoteSection blockquote:before {
+  left: -20px;
+  top: -20px;
+}
+
+.customQuoteSection blockquote:after {
+  content: "”";
+  right: -20px;
+  bottom: -20px;
+}
+
+.customQuoteSection blockquote footer {
+  font-size: 16px;
+  color: #f4f4f4;
+  margin-top: 10px;
+}
+
+.customQuoteSection img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Login Section Styles */
+.customLoginSection h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.customLoginSection h2 span {
+  color: #ff0000;
+}
+
+.customLoginSection p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.customFormGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.customFormGroup input[type="text"],
+.customFormGroup input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.customOtpGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.customOtpGroup input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.customSendOtp {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0033cc;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Remember Me and Forgot Password */
+.customRememberMe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customRememberMe label {
+  display: flex;
+  align-items: center;
+}
+
+.customRememberMe input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.customForgotPassword {
+  font-size: 14px;
+  color: #0033cc;
+  text-decoration: none;
+}
+
+/* Form Buttons */
+.customFormButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.customLoginButton,
+.customSignupButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customLoginButton {
+  background-color: #0033cc;
+  color: #fff;
+}
+
+.customSignupButton {
+  background-color: transparent;
+  color: #0033cc;
+  border: 2px solid #0033cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customContent {
+    padding: 20px;
+  }
+
+  .customNavbar {
+    flex-direction: column;
+    align-items: center; /* Center the elements on small screens */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .customLogo h1 {
+    font-size: 28px;
+  }
+
+  .customLogo p {
+    font-size: 12px;
+  }
+}

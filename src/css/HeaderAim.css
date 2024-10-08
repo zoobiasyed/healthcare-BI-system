@@ -1,0 +1,26 @@
+.header {
+  background-color: #0b1a61; /* Same color as sidebar */
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  height: 60px; /* Set a height for the header */
+  position: fixed; /* Fix the header to the top */
+  top: 0;
+  left: 250px; /* Leave space for the sidebar */
+  width: calc(100% - 250px); /* Adjust width to account for the sidebar */
+  z-index: 1000; /* Ensure the header stays on top */
+}
+
+.search input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 300px;
+}
+

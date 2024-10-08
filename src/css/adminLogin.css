@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.Adminheader {
+    background-color: #08107d;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+.Adminlogo{
+    margin: 0 0 0 550px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section {
+    width: 50%;
+    text-align: center;
+}
+.quote-section p{
+    text-align: left;
+    font-size: 25px;
+}
+
+
+.quote-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.login-section {
+    width: 50%;
+    text-align: center;
+    padding-left: 40px;
+    border-left: 2px solid #eee;
+}
+ .h1{
+    
+    text-align: left;
+}
+.para{
+    margin-bottom: 25px;
+}
+.home{
+    
+    color: white;
+    text-decoration: none;
+}
+
+form{
+    margin: 0 5px;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    /* border-adius: 5px; */
+    border: none;
+    border-bottom: 1px solid #5C5C5C;
+    font-size: 16px;
+}
+
+.otp-group {
+    display: flex;
+    align-items: center;
+}
+
+.otp-group input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.send-otp {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0033cc;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #0033cc;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.form-buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    
+    margin-top: 20px;
+}
+
+.login-button, .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color:#08107d;
+    color: #fff;
+    margin-right: 35px;
+}
+
+.button {
+    background-color: transparent;
+    color: #08107d;
+    border: 2px solid #08107d;
+}
+
+
+/* extra */
+.img-9 {
+    aspect-ratio: 3.03;
+    object-fit: auto;
+    object-position: center;
+    /* width: 156px; */
+    align-self: center;
+    max-width: 120%;
+    /* extra */
+    width: 100px;
+
+  }
+  .div-20 {
+    color: #fff;
+    align-self: center;
+    margin-top: 6px;
+    /* font: 400 22px Sulphur Point, sans-serif; */
+    /* extra */
+    font-size: 15px;
+    font-family:sans-serif;
+    
+
+  }

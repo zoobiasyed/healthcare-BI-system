@@ -1,0 +1,76 @@
+/* side bar css  */
+
+.sidebar {
+    /* width: 22%;
+    background-color: #08107d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    background-color: #08107d;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 auto;
+    /* gap: 5px; */
+    /* padding: 69px 0 69px 31px;  */
+    /* extra */
+    padding: 20px;
+}
+
+
+.welcome {
+    text-align: center;
+    /* margin-bottom: 40px; */
+    /* extra */
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    /* font-size: 30px;
+    font-weight: 700; */
+    /* extra */
+    font-size: 1.2em;
+}
+
+.profile-pic {
+    width: 76px;
+    /* margin-top: 19px; */
+    /* extra */
+    margin-top: 12px;
+}
+
+.nav-menu {
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+    /* extra */
+
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    /* gap: 15px; */
+    gap: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    /* padding: 5% auto ;
+    margin: 8% ; */
+    /* extra */
+    padding: 10px 20px;
+}
+
+
+
+.nav-link {
+     
+    border-radius: 5px; /* Rounded corners for all links */
+}
+

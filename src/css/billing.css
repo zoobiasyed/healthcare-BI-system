@@ -1,0 +1,141 @@
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 78%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-19 {
+    display: flex;
+    
+    flex-direction: column;
+    padding: 0 20px;
+   
+    margin-top: 10px;
+
+  }
+  @media (max-width: 991px) {
+    .div-19 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+ 
+
+
+.head{
+    width: 100%;
+    display: flex;
+    margin: 25px 0 0 25px;
+    
+    
+}
+.item{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    margin-right: 25px;
+    
+}
+.text{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-right: 5px;
+}
+.item input{
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    
+    
+
+}
+
+.container {
+    
+    width: 90%;
+    margin: 20px 0 ;
+   
+    padding: 20px;
+    /
+}
+.divtab{
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #f3f1f1;
+    
+    font-size: 20px;
+    
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+    font-size: 20px;
+   
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    
+    padding: 18px 52px 20px 31px;
+}
+th {
+    background-color: #f2f2f2;
+    
+    padding: 18px 72px 20px 31px;
+    text-align: left;
+}
+tbody tr {  
+    border-bottom: 1px solid #ddd;
+    padding: 18px 72px 20px 31px;
+}
+tbody tr:last-child {
+    border-bottom: none;
+}
+.btn-add {
+    padding: 10px 20px;
+    background-color:#56a0e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.btn-add:hover {
+    background-color: #56a0e5;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+
+
+
+ 
+ 
