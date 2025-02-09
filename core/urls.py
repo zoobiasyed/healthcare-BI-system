@@ -17,9 +17,14 @@ router.register(r'consultations', ConsultationViewSet)
 
 # URL patterns
 urlpatterns = [
-    path('', views.index, name='index'),  
+    # Welcome page
+    path('', views.index, name='index'),
+    
+    # API routes for doctors, patients, and consultations
     path('api/', include(router.urls)),
-    path('', views.frontend),
+
+    # Frontend route to serve the React app
+    path('frontend/', views.frontend, name='frontend'),
     
     # List and detail views for Doctors, Patients, and Consultations
     path('doctors/', DoctorListCreateView.as_view(), name='doctor-list'),

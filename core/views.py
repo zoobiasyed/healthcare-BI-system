@@ -5,60 +5,69 @@ from .serializers import DoctorSerializer, PatientSerializer, ConsultationSerial
 from django.http import HttpResponse
 from rest_framework.permissions import IsAuthenticated
 from .permissions import IsAdmin, IsDoctor, IsPatient
-from django.shortcuts import render
 
 def frontend(request):
     return render(request, 'frontend/build/index.html')
 
 def index(request):
     """Welcome page."""
-    return HttpResponse("Welcome to the Healthcare BI System!")
+    return HttpResponse("Welcome to the Healthcare BI System made by Zoobia, Hafsa and Aiman!")
 
+# Class to list or create doctors
 class DoctorListCreateView(generics.ListCreateAPIView):
     """List all doctors or create a new doctor."""
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
 
+# Class to retrieve, update or delete a doctor
 class DoctorDetailView(generics.RetrieveUpdateDestroyAPIView):
     """Retrieve, update, or delete a doctor."""
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
 
+# Class to list or create patients
 class PatientListCreateView(generics.ListCreateAPIView):
     """List all patients or create a new patient."""
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
 
+# Class to retrieve, update or delete a patient
 class PatientDetailView(generics.RetrieveUpdateDestroyAPIView):
     """Retrieve, update, or delete a patient."""
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
 
+# Class to list or create consultations
 class ConsultationListCreateView(generics.ListCreateAPIView):
     """List all consultations or create a new consultation."""
     queryset = Consultation.objects.all()
     serializer_class = ConsultationSerializer
 
+# Class to retrieve, update or delete a consultation
 class ConsultationDetailView(generics.RetrieveUpdateDestroyAPIView):
     """Retrieve, update, or delete a consultation."""
     queryset = Consultation.objects.all()
     serializer_class = ConsultationSerializer
 
+# Viewset to manage doctors
 class DoctorViewSet(viewsets.ModelViewSet):
     """Manage doctors through a viewset."""
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
 
+# Viewset to manage patients
 class PatientViewSet(viewsets.ModelViewSet):
     """Manage patients through a viewset."""
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
 
+# Viewset to manage consultations
 class ConsultationViewSet(viewsets.ModelViewSet):
     """Manage consultations through a viewset."""
     queryset = Consultation.objects.all()
     serializer_class = ConsultationSerializer
 
+# Admin view that requires admin permissions
 class AdminView(generics.RetrieveAPIView):
     """Retrieve information for the admin user."""
     permission_classes = [IsAuthenticated, IsAdmin]
@@ -69,6 +78,7 @@ class AdminView(generics.RetrieveAPIView):
         """Get admin information."""
         return self.retrieve(request, *args, **kwargs)
 
+# Doctor view that requires doctor permissions
 class DoctorView(generics.RetrieveAPIView):
     """Retrieve information for the authenticated doctor."""
     permission_classes = [IsAuthenticated, IsDoctor]
@@ -79,6 +89,7 @@ class DoctorView(generics.RetrieveAPIView):
         """Get doctor information."""
         return self.retrieve(request, *args, **kwargs)
 
+# Patient view that requires patient permissions
 class PatientView(generics.RetrieveAPIView):
     """Retrieve information for the authenticated patient."""
     permission_classes = [IsAuthenticated, IsPatient]
